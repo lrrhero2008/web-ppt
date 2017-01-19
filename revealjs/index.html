@@ -20,11 +20,14 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			body{font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>盒子模型(box modal)</section>
+				<section><h1>盒子模型(box modal)</h1></section>
 				<section>					
 					<section id="fragments">
 						<h3>CSS盒尺寸区域</h3>
@@ -33,26 +36,8 @@
 							<pre>
 								<code class="hljs">'
 									.box1 { box-sizing: content-box; } /* 默认值 */
-								</code>
-							</pre>
-						</p>
-						<p class="fragment">
-							<pre>
-								<code class="hljs">'
 									.box2 { box-sizing: padding-box; } /* 火狐曾经支持 */
-								</code>
-							</pre>
-						</p>
-						<p class="fragment">
-							<pre>
-								<code class="hljs">'
-									.box3 { box-sizing: border-box; }  /* IE8以上，现代浏览器支持 */
-								</code>
-							</pre>
-						</p>
-						<p class="fragment">
-							<pre>
-								<code class="hljs">'
+									.box3 { box-sizing: border-box; }  /* 支持 */
 									.box4 { box-sizing: margin-box; }  /* 从未支持 */
 								</code>
 							</pre>
@@ -64,8 +49,12 @@
 						<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 					</section>
 					<section>
-						<img src="img/zoom-bug.gif" />
-						<img src="img/fix-bug.gif" />
+						<p class="fragment">
+							<img src="img/zoom-bug.gif" />
+						</p>
+						<p  class="fragment">
+							<img src="img/fix-bug.gif" />
+						</p>
 					</section>
 				</section>
 				<section>
@@ -87,7 +76,9 @@
 					</pre>
 				</section>
 				<section>
-					<p>听说你们都在找福？那个，有敬业福吗？给我几个呗</p>
+					<p >听说你们都在找福？</p>
+					<p>那个，有敬业福吗？给我几个呗</p>
+					<img src="fu02.jpg"/>
 				</section>
 			</div>
 		</div>
