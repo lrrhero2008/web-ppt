@@ -20,9 +20,6 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-		<style>
-			body{font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif !important}
-		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -34,8 +31,7 @@
 						<img src="img/css-box.jpg" />
 						
 						<pre  class="fragment">
-							<code class="hljs">
-								.box1 { box-sizing: content-box; } /* 默认值 */
+							<code class="hljs">.box1 { box-sizing: content-box; } /* 默认值 */
 								.box2 { box-sizing: padding-box; } /* 火狐曾经支持 */
 								.box3 { box-sizing: border-box; }  /* 支持 */
 								.box4 { box-sizing: margin-box; }  /* 从未支持 */
@@ -67,8 +63,7 @@
 					<h3>Flexbox(伸缩布局盒)</h3>
 					<p>CSS3 中一个新的布局模式，与时俱进的产物，为了现代网络中更为复杂的网页需求而设计</p>
 					<pre>
-						<code class="hljs" data-trim contenteditable>
-							.flex-box-block {
+						<code class="hljs" data-trim contenteditable>.flex-box-block {
 							  display: flex;
 							}
 							.flex-box-inline {
