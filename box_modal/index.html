@@ -21,7 +21,7 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 		<style>
-			body{font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif}
+			body{font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif !important}
 		</style>
 	</head>
 	<body>
@@ -32,16 +32,16 @@
 					<section id="fragments">
 						<h3>CSS盒尺寸区域</h3>
 						<img src="img/css-box.jpg" />
-						<p class="fragment">
-							<pre>
-								<code class="hljs">
-									.box1 { box-sizing: content-box; } /* 默认值 */
-									.box2 { box-sizing: padding-box; } /* 火狐曾经支持 */
-									.box3 { box-sizing: border-box; }  /* 支持 */
-									.box4 { box-sizing: margin-box; }  /* 从未支持 */
-								</code>
-							</pre>
-						</p>
+						
+						<pre  class="fragment">
+							<code class="hljs">
+								.box1 { box-sizing: content-box; } /* 默认值 */
+								.box2 { box-sizing: padding-box; } /* 火狐曾经支持 */
+								.box3 { box-sizing: border-box; }  /* 支持 */
+								.box4 { box-sizing: margin-box; }  /* 从未支持 */
+							</code>
+						</pre>
+
 					</section>
 					<section>
 						<h3>Demo</h3>
@@ -80,7 +80,7 @@
 				<section>
 					<p >听说你们都在找福？</p>
 					<p>那个，有敬业福吗？给我几个呗</p>
-					<img src="img/fu02.jpg"/>
+					<img src="img/fu02.jpg" width=500/>
 				</section>
 			</div>
 		</div>
