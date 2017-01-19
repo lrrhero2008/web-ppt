@@ -24,8 +24,71 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>盒子模型(box modal)</section>
+				<section>					
+					<section id="fragments">
+						<h3>CSS盒尺寸区域</h3>
+						<img src="img/css-box.jpg" />
+						<p class="fragment">
+							<pre>
+								<code class="hljs">'
+									.box1 { box-sizing: content-box; } /* 默认值 */
+								</code>
+							</pre>
+						</p>
+						<p class="fragment">
+							<pre>
+								<code class="hljs">'
+									.box2 { box-sizing: padding-box; } /* 火狐曾经支持 */
+								</code>
+							</pre>
+						</p>
+						<p class="fragment">
+							<pre>
+								<code class="hljs">'
+									.box3 { box-sizing: border-box; }  /* IE8以上，现代浏览器支持 */
+								</code>
+							</pre>
+						</p>
+						<p class="fragment">
+							<pre>
+								<code class="hljs">'
+									.box4 { box-sizing: margin-box; }  /* 从未支持 */
+								</code>
+							</pre>
+						</p>
+					</section>
+					<section>
+						<h3>Demo</h3>
+						<p data-height="300" data-theme-id="13932" data-slug-hash="KaWpGR" data-default-tab="css,result" data-user="lrrhero2008" data-embed-version="2" data-pen-title="KaWpGR" class="codepen">See the Pen <a href="https://codepen.io/lrrhero2008/pen/KaWpGR/">KaWpGR</a> by alex (<a href="http://codepen.io/lrrhero2008">@lrrhero2008</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+						<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+					</section>
+					<section>
+						<img src="img/zoom-bug.gif" />
+						<img src="img/fix-bug.gif" />
+					</section>
+				</section>
+				<section>
+					<p>每个盒模型的位置是三维的，除了x轴和y轴，还有一个表示层叠的z轴；</p>
+					<p>z轴上的位置决定了我们看到的盒模型之间的层叠效果（谁盖住谁）。</p>
+				</section>
+				<section>
+					<h3>Flexbox(伸缩布局盒)</h3>
+					<p>CSS3 中一个新的布局模式，与时俱进的产物，为了现代网络中更为复杂的网页需求而设计</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							.flex-box-block {
+							  display: flex;
+							}
+							.flex-box-inline {
+							  display: inline-flex;
+							}
+						</code>
+					</pre>
+				</section>
+				<section>
+					<p>听说你们都在找福？那个，有敬业福吗？给我几个呗</p>
+				</section>
 			</div>
 		</div>
 
