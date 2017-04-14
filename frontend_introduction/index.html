@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>前端小组介绍</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>前端组</section>
+				<section>					
+					<section>
+						<h3>主要职责</h3>
+					</section>
+					<section>
+						<ul>
+							<li>网站界面的实现</li>
+							<li>UE/UX，交互与体验</li>
+							<li>app界面设计</li>
+
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>工作流程</h3>
+					</section>
+					<section>
+						<ul>
+							<li>拿到设计图/文档</li>
+							<li>完成html静态页面</li>
+							<li>交付前台组/后台组</li>
+							<li>代码测试，发布和部署</li>
+						</ul>
+					</section>
+				</section>
+				<section>					
+					<section>
+						<h3>如何沟通？</h3>
+					</section>
+					<section>
+						<ul>
+							<li>bacscamp</li>
+							<li>QQ</li>
+							<li>面对面</li>
+						</ul>
+					</section>
+				</section>
+				<section>					
+					<section>
+						<h3>各种注意事项</h3>
+					</section>
+					<section>
+						<ul>							
+							<li>bootstrap 2 and 3 </li>
+							<li>最大障碍是本地没环境</li>
+						</ul>
+					</section>
+				</section>
+				<section>					
+					<section>
+						<h3>我们想做的事</h3>
+					</section>
+					<section>
+						<ul>							
+							<li>建立一套ui组件库，共用的，标准的 </li>
+							<li>UI/UE/UX,界面，交互与体验</li>
+							<li>去bootstrap2？</li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+</html>
